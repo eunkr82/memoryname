@@ -1,0 +1,51 @@
+.Footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sec{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainText {
+    font-family: "국립박물관문화재단클래식B";
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.smallText {
+    font-family: "국립박물관문화재단클래식B";
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.secText {
+    font-family: "Pretendard-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    color: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+.iconWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.iconWrap img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+}

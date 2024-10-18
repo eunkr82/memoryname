@@ -1,0 +1,114 @@
+.container {
+    position: relative;
+    width: calc(100% - 520px); 
+    margin: 0 auto;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 40px;
+    color: #fff;
+}
+
+.resultTitle {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profileList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.profileWrap {
+    width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+ 
+.profileWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profileWrap p {
+    font-family: '국립박물관문화재단클래식B';
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.buttonWrap {
+    width: 100%;
+    padding: 50px 0px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(61, 61, 61, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* 모달 컨텐츠 스타일 */
+  .modalContent {
+    background-color: #2C2C2D;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    width: 800px;
+    max-height: 80vh;
+    overflow-x: hidden;
+  }
+  
+  .modalContent h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .modalContentWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 10px;
+  }
+
+  .modalImage {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .modalText {
+    width: 450px;
+    height: auto;
+    color: #d9d9d9;
+  }
+
+  .modalText h2 {
+    font-size: 32px;
+    display: flex;
+  }

@@ -1,0 +1,85 @@
+.test .container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.question {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-text {
+    font-family: "국립박물관문화재단클래식B";
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.selection {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.selAB {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 60px 0px;
+    font-family: "국립박물관문화재단클래식B";
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selButton-wrap {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    gap: 80px;
+}
+
+.selButton {
+    width: 477px;
+    height: 60px;
+    object-fit: contain; 
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 30px;
+    background: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 5px solid;
+    color: #d9d9d9;
+    border-bottom-color: #d9d9d9;
+}
+  
+  .selButton:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}

@@ -1,0 +1,62 @@
+.progress-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 0; */
+    padding-top: 75px;
+    background: none;
+  }
+  
+  .progress-bar {
+    position: relative;
+    width: 100%; /* 좌우 여백으로 인해 원이 가운데 정렬됩니다 */
+    height: 2px;
+    background-color: #979797;
+  }
+  
+  .progress-fill {
+    position: relative;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .progress-step {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #979797;
+    border-radius: 50%;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .progress-step.active {
+    background-color: #fff;
+  }
+  
+  .progress-step:nth-child(1) {
+    left: 10%;
+  }
+  
+  .progress-step:nth-child(2) {
+    left: 25%;
+  }
+  
+  .progress-step:nth-child(3) {
+    left: 40%;
+  }
+  
+  .progress-step:nth-child(4) {
+    left: 55%;
+  }
+  
+  .progress-step:nth-child(5) {
+    left: 75%;
+  }
+  
+  .progress-step:nth-child(6) {
+    left: 90%;
+  }
+  
