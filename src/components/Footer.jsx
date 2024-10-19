@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
+import logoImg from '../assets/logo_d9d9d9.svg';
 
 const igUrl = "https://www.instagram.com/ewdm_theatre?igsh=MTQ2YmZwMWNub3BjaQ%3D%3D"
 const xUrl = "https://x.com/ewdmtheatre"
@@ -11,6 +12,7 @@ const Footer = () => {
         <>
             <hr/>
             <div className="Footer">
+                <img className="logo-wrap" src={logoImg}/>
                 <div className="sec">
                     <p className='mainText'>기억의 이름</p>
                     <p className='smallText'>2024.12.27-12.28 광진구 설렘아트홀</p>
@@ -25,7 +27,7 @@ const Footer = () => {
                 <div className="sec">
                     <p className="secText">TICKET</p>
                     <Link>
-                        <p>예매 링크 바로가기</p>
+                        <div className="linkText">예매 링크 바로가기</div>
                     </Link>
                 </div>
             </div>

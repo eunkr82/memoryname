@@ -4,7 +4,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+}
+
+.logo-wrap {
+    width: 10%;
+    height: auto;
+    margin-right: 50px;
 }
 
 .sec{
@@ -12,6 +17,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 .mainText {
@@ -48,4 +55,11 @@
     height: 50px;
     object-fit: contain;
     cursor: pointer;
+}
+
+.linkText {
+    padding-top: 30px;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    color: #d9d9d9;
 }
