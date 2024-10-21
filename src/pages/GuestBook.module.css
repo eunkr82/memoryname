@@ -1,0 +1,54 @@
+.title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.guestBookTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.guestBookTable th, .guestBookTable td {
+    font-family: 'Pretendard-Regular';
+    padding: 10px;
+    text-align: left;
+    color: White;
+}
+  
+.guestBookTable th {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #d9d9d9; 
+  text-align: center;
+}
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    margin: 0px 5px;
+    padding: 5px 10px;
+    background-color: #d9d9d9;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination button[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  

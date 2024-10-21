@@ -1,14 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TabMenu from '../components/TabMenu';
 import Footer from '../components/Footer';
 import Toggle from '../components/Toggle';
-import GuestBook from '../pages/GuestBook';
-import toggleImg1 from '../assets/toggleImg1.png';
-import toggleImg2 from '../assets/toggleImg2.png';
-import toggleImg3 from '../assets/toggleImg3.png';
-import toggleImg4 from '../assets/toggleImg4.png';
-import toggleImg5 from '../assets/toggleImg5.png';
 import styles from './Program.module.css';
 
 
@@ -27,11 +20,9 @@ const Program = () => {
                     </div>
                 </div>
             </div>
-            
             <div className={styles.buttonWrap}>
                 <TabMenu />
             </div>
-
             <div className={styles.openingText}>
                 {"연극 <기억의 이름>을 찾아주신 관객 여러분, 진심으로 감사드립니다. \n 2023년 겨울, ‘창작극을 만들어 보자’ 라는 생각 하나로 아홉 명의 친구들이 모였습니다. \n 그리고 꼬박 한 해가 걸려 <기억의 이름>이 마침내 무대에 오르게 되었습니다. \n미경, 현, 은재, 그리고 재현이와 함께할 수 있어 정말 즐거웠습니다. \n아홉 명의 이외동문 친구들, 그리고 홍보를 도와준 겨레, 나은, 세진 언니에게 감사의 말씀을 전합니다. \n\n 추운 날 찾아와 주신 관객 여러분들께 다시 한번 감사드립니다. \n즐거운 관람 되세요."}
             </div>
@@ -72,7 +63,7 @@ const Program = () => {
             <div className={styles.container}>
                 <div className={styles.sectionNameWrap}>
                     <div className={styles.mainTitle}>제작 비하인드</div>
-                    <div className={styles.semiTitle}>제작 비하인드 / 못다 한 이야기들 / 시대배경</div>
+                    <div className={styles.semiTitle}>캐릭터 비하인드 / 시대배경</div>
                 </div>
 
                 <div className={styles.sectionTextWrap}>
@@ -80,53 +71,65 @@ const Program = () => {
                         01 /
                     </div>
                     <div className={styles.sectionText}>
-                        <p className={styles.sectionTextTitle}>제작 비하인드</p>
-                        <p>
-                            '기억의 이름'을 만들면서 가장 공을 들였던 작업은 바로 ‘덜어내는’ 과정이었습니다.처음에는 하고 싶은 말이 너무 많았지만, 극의 이음새를 다듬으며 많은 부분을 덜었습니다. 이 페이지를 통해서 무대 위 올려진 빙산의 일각, 그 아래를 조금 드러내 보고자 합니다.
-                        </p>
+                        <p className={styles.sectionTextTitle}>캐릭터 비하인드</p>   
                     </div>
                 </div>
+
+                <div className={styles.charWrap}>
+                    <div className={styles.charContent}>
+                        <img src={require("../assets/minProfile.jpeg")}/>
+                        <div className={styles.charToggle}>
+                            <p style={{fontSize: '20px', fontWeight: 'bold'}}>민재현</p>
+                            <br/>
+                            <Toggle 
+                                title="“다큐 영화 제작사에 새로 들어갔어요, 바른필름이라고…”" 
+                                content={"대학 시절에는 사회학을 전공했다. 그러나 전공에 얽매이지 않고 본인의 흥미를 자극하는 수업을 찾아 듣고, 이 시기 황은재를 만난다. 이후 영화 동아리에서 활동하며 영상매체에 흥미를 느끼게 되고, 방송사에 PD로 입사한다. \n\n 그러나 방송사 내에서는 본인이 만들고 싶은 영상을 만들기 힘들다고 판단, 선배의 추천으로 다큐멘터리 제작사에 새로이 들어가게 된다."}
+                                images={[]}
+                            />
+                        </div>
+                    </div>
+                    
+                    <div className={styles.charContent}>
+                        <img src={require("../assets/seoProfile.jpeg")}/>
+                        <div className={styles.charToggle}>
+                            <p style={{fontSize: '20px', fontWeight: 'bold'}}>서미경</p>
+                            <br/>
+                            <Toggle 
+                                title="“요점만 말하자면 이래요. 난 너무 많은 걸, 너무 일찍 알아버렸어요. “" 
+                                content={"부모님과 두 동생을 두고 있는 집의 장녀이다. 바쁜 부모님 덕에 어릴 때부터 뭐든지 혼자 알아서 하는 습관이 생겼고, 이 때문에 감정을 표현하는 데 서투르다. \n\n 가난한 집안 환경에 환멸을 느껴 물질적 가치를 인생의 최우선 목표로 삼게 되고, 대학생활의 목표는 졸업 후 안정적인 수입원을 얻는 것이었다. 학생운동에 가담했던 것은 순전히 영주의 설득 때문이었다."}
+                                images={[]}
+                            />
+                        </div>
+                    </div>
+                    <div className={styles.charContent}>
+                        <img src={require("../assets/choiProfile.jpeg")}/>
+                        <div className={styles.charToggle}>
+                            <p style={{fontSize: '20px', fontWeight: 'bold'}}>최이현</p>
+                            <br/>
+                            <Toggle 
+                                title="“최현 넌 잘난 너네 아빠 빽으로 매번 무사했을지 몰라도 영주는 아니었어.”" 
+                                content={"경찰 고위 간부인 아버지 덕에 물질적으로는 부족함 없이 자랐다. 대학 입학 후 학생운동에 가담할 당시 수배가 내려지는 등 위험한 상황이 있었지만 아버지의 존재로 그 위험은 항상 무마되었다. \n\n 현은 유년기 때부터 아버지의 폭력에 노출되어 반감을 가지고 있다. 아버지에 대한 반감이 경찰 세력과 정권에 대한 반감으로 확장된 것이 학생운동에 참여하게 된 계기이기도 하다."}
+                                images={[]}
+                            />
+                        </div>
+                    </div>
+                    <div className={styles.charContent}>
+                        <img src={require("../assets/hwangProfile.jpeg")}/>
+                        <div className={styles.charToggle}>
+                            <p style={{fontSize: '20px', fontWeight: 'bold'}}>황은재</p>
+                            <br/>
+                            <Toggle 
+                                title="“그냥 내 이론적 실험 차원에서 발을 담갔던 거지, 학생운동에 관심이 있었던 것도 아니었거든.”" 
+                                content={"고교 시절부터 시를 좋아해 동경하는 마음으로 문예창작과에 진학했으나, 대학 진학 이후 마르크스레닌주의와 현실사회주의에 빠져 사회학과로 전과한다. \n\n 이 시기 총여학생회의 선전부장으로도 활동했으나, 학생운동의 목표 자체는 크게 생각하지 않았고 학생운동을 본인의 지적 성취를 위한 사상적 실험으로 여겼다. \n\n 그러나 소련 붕괴와 운동권 쇠퇴를 계기로 흥미를 잃고 노문학으로 대학원에 진학하고, 자대 교수로 임용된다."}
+                                images={[]}
+                            />
+                        </div>
+                    </div>      
+            </div>
 
                 <div className={styles.sectionTextWrap}>
                     <div className={styles.sectionTextTitle}>
                         02 /
-                    </div>
-                    <div className={styles.sectionText}>
-                        <p className={styles.sectionTextTitle}>못다 한 이야기들</p>
-                        <p style={{color: '#ff0000', fontStyle: 'italic'}}>*Spoiler Alert.*</p>
-                        <br/>
-                        <p>
-                            배우들이 연습을 시작하기 전, 극본을 만드는 과정에서 삭제된 부분입니다. 구성, 내용, 대사 등 모든 부분이 많이 바뀌었네요. 관람 이후, 모든 내용을 알게 되신 후 읽으시길 부탁드립니다.
-                        </p>
-                        <br/>
-                        <div>
-                            <Toggle 
-                                title="이거 상속자들이야?" 
-                                content={"삭제 사유: 리딩을 하기 전, 이 부분에 대한 배우들의 강한 반발이 있었습니다. “최이현이 김탄이고 서미경이 최영도냐”, “이 다음에 ’사탄들의 학교에 루시퍼의 등장이라’ 같은 얘기가 나와야 할 것 같다” 등등… 계속 있었으면 어떻게 살렸어야 했을지 막막하네요."}
-                                images={[toggleImg1]}
-                            />
-                            <Toggle 
-                                title="황은재는 어떤 사람이길래..." 
-                                content={"지금은 아예 삭제된 부분 중, 학보 출판 직전 윤영주의 휴학으로 인해 총여학생회가 약간의 위기를 맞는다(?)는 이야기가 있었습니다. 이를 두고 과하게 반응하는 현에게 짜증을 내는 은재의 모습입니다.\n\n 삭제 이유: \n\n 1) 분위기를 조금 가볍게 만들기 위해 총여학생회 활동 당시 세 사람의 이야기를 재구성했습니다.\n\n 2) 황은재 배우의 강한 반발이 있었습니다. 반복되는 문어체, 반복되는 구성이 관객들에게 피로감을 줄 것이라는 의견이 있었고, 이에 동의해 내용을 수정하게 되었습니다."}
-                                images={[toggleImg2]}
-                            />
-                            <Toggle 
-                                title="우리 현이 이 정도는 아닙니다" 
-                                content={"삭제 이유: 대사와 행동이 필요 이상으로 강하다는 의견이 많았습니다. 굳이 담배를 피우는 모습을 보이거나 심한 욕을 하지 않아도 인물의 강한 성격이나 분노, 방황하는 시기의 모습을 충분히 드러낼 수 있으니까요. "}
-                                images={[toggleImg3, toggleImg4]}
-                            />
-                            <Toggle 
-                                title="우리 미경이도 이 정도는 아닙니다" 
-                                content={"삭제 이유: 서미경 역 배우의 “그렇지 않아도 비호감인 인물을 이렇게까지 재수없게 만들 필요가 있어?” 라는 간절한 반발이 있었습니다. 구성을 바꾸며 자연스럽게 사라진 장면이기도 하네요." }
-                                images={[toggleImg5]}
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className={styles.sectionTextWrap}>
-                    <div className={styles.sectionTextTitle}>
-                        03 /
                     </div>
                     <div className={styles.sectionText}>
                         <p className={styles.sectionTextTitle}>연극 '기억의 이름' 배경</p>

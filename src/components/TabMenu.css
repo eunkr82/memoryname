@@ -4,9 +4,9 @@
     padding: 10px;
     z-index: 1000; 
     gap: 30px;
-  }
+}
   
-  .tab-button {
+.tab-button {
     width: 200px;
     height: auto;
     font-size: 28px;
@@ -20,9 +20,19 @@
     border-bottom-color: #d9d9d9;
     text-decoration: none;
     text-align: center;
-  }
+}
   
-  .tab-button:hover {
+.tab-button:hover {
     border-bottom-color: #FFF;
     color: #fff; 
-  }
+}
+
+.tab-button.active {
+  color: #fff;
+  border-bottom-color: #FFF;
+}
+
+.tab-button:not(.active) {
+  color: #979797; 
+  border-bottom-color: #979797;
+}
