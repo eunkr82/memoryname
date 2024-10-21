@@ -1,0 +1,27 @@
+.toggle {
+    margin-bottom: 10px;
+  }
+  
+  .toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  .images img {
+    display: block;
+    width: 100%;
+  }
+
+  .content {
+    white-space: pre-line;
+    margin-top: 20px;
+  }
+  

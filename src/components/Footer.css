@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-.logo-wrap {
+.team-logo-wrap {
     width: 10%;
     height: auto;
     margin-right: 50px;
@@ -25,20 +25,20 @@
     font-family: "국립박물관문화재단클래식B";
     font-size: 28px;
     font-weight: 200;
-    color: #fff;
+    color: #d9d9d9;
 }
 
 .smallText {
     font-family: "국립박물관문화재단클래식B";
     font-size: 16px;
     font-weight: 200;
-    color: #fff;
+    color: #d9d9d9;
 }
 
 .secText {
     font-family: "Pretendard-Regular";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: #d9d9d9;
     margin-bottom: 15px;
 }

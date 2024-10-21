@@ -12,7 +12,7 @@ const Footer = () => {
         <>
             <hr/>
             <div className="Footer">
-                <img className="logo-wrap" src={logoImg}/>
+                <img className="team-logo-wrap" src={logoImg}/>
                 <div className="sec">
                     <p className='mainText'>기억의 이름</p>
                     <p className='smallText'>2024.12.27-12.28 광진구 설렘아트홀</p>

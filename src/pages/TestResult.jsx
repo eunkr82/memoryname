@@ -63,10 +63,12 @@ const TestResult = () => {
 
   return (
     <div className={styles.container}>
+
       <div className={styles.resultTitle}>
         <h2>테스트 결과</h2>
         <hr />
       </div>
+
       <div className={styles.resultWrap}>
         <img src={image} className={styles.resultImg} />
         <div className={styles.resultText}>
@@ -74,6 +76,7 @@ const TestResult = () => {
             <h3>당신과 닮은 인물은 {result}입니다!</h3>
             <p>{myScript}</p>
           </div>
+          
           <div className={styles.box}>
             <div className={styles.semiTitle}>
               <h3>당신과 잘 맞는 인물</h3> <h3>{goodMatch}</h3>
@@ -81,13 +84,15 @@ const TestResult = () => {
             <img src={gmImage} className={styles.Img} />
             <p>{gmInfo}</p>
           </div>
+
           <div className={styles.box}>
             <div className={styles.semiTitle}>
               <h3>당신과 안 맞는 인물</h3> <h3>{badMatch}</h3>
             </div>
-            <img src={bmImage} className={styles.Img} />
+            {bmImage && <img src={bmImage} className={styles.Img} />}
             <p>{bmInfo}</p>
           </div>
+
           <div className={styles.box}>
             <h3>인물 소개</h3>
             <p>{myInfo}</p>
@@ -96,13 +101,13 @@ const TestResult = () => {
       </div>
       <div className={styles.menuWrap}>
         <Link to="/test">
-          <button><p>다시하기</p></button>
+          <button>다시하기</button>
         </Link>
         <Link to="/characterInfo">
-          <button><p>전체 캐릭터 설명 보기</p></button>
+          <button>전체 캐릭터 설명 보기</button>
         </Link>
         <Link to="/program">
-          <button><p>프로그램북</p></button>
+          <button>프로그램북</button>
         </Link>
       </div>
       <Footer />

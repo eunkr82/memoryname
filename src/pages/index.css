@@ -5,41 +5,69 @@
 
 .menu-box {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-wrap {
+    width: 100%;
     height: auto;
     top: 50%;
     left: 50%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-.logo-wrap img {
-    width: auto;
-    height: auto;
-    object-fit: contain; 
-    max-width: 100%;
-}
-
-.logo-wrap {
-    position: relative;
-    width: 470px;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.logo-box img {
+    width: 480px;
+    object-fit: contain; 
+}
+
+.logo-box {
+    width: 500px;
+    height: 100%;
 }
 
 .date-box {
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+.date-box img {
+    width: 250px;
 }
   
 .button-wrap {
-    position: relative; 
-    width: 360px;
+    width: 40%;
     display: flex;
     flex-direction: column; 
-    justify-content: space-evenly; 
+    justify-content: center; 
     align-items: center; 
-    gap: 30px;
+    gap: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.btn {
+    width: 380px;
+    height: auto;
+    max-width: 460px;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 10px 30px;
+    background: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 5px solid;
+    color: #d9d9d9;
+    border-bottom-color: #d9d9d9;
+    text-decoration: none;
     text-align: center;
 }
+
+.btn:hover {
+    border-bottom-color: #FFF;
+    color: #fff; 
+  }

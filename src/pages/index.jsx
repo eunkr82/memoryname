@@ -8,10 +8,10 @@ const Index = () => {
             <div className="menu-box">
                 <div className="logo-wrap">
                     <div className='logo-box'>
-                        <img src={require('../assets/logo.png')}></img>
+                        <img src={require('../assets/logo.png')}/>
                     </div>
                     <div className='date-box'>
-                        <img src={require('../assets/date.png')}></img>
+                        <img src={require('../assets/date.png')}/>
                     </div>
                 </div>
                 <div className="button-wrap">
