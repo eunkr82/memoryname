@@ -71,13 +71,13 @@ h2 {
     z-index: 1000;
   }
   
-  /* 모달 컨텐츠 스타일 */
   .modalContent {
     background-color: #2C2C2D;
     color: #fff;
     padding: 20px;
     border-radius: 50px;
     width: 800px;
+    height: 70vh;
     max-height: 80vh;
     overflow-x: hidden;
   }

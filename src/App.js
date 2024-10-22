@@ -7,6 +7,7 @@ import GuestBook from './pages/GuestBook';
 import Program from './pages/program';
 import TestResult from './pages/TestResult';
 import CharacterInfo from './pages/CharacterInfo';
+import WritePost from './pages/WritePost';
 
 import './App.css';
 
@@ -26,7 +27,8 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/test" element={<Test />} />
         <Route path="/test-result" element={<TestResult />} />
-        <Route path="/guestbook" element={<GuestBook />} />
+        <Route path="/guestbook/*" element={<GuestBook />}/>
+        <Route path="/guestbook/write-post" element={<WritePost />} />
         <Route path="/program" element={<Program />} />
         <Route path="/CharacterInfo" element={<CharacterInfo />} />
       </Routes>
