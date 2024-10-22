@@ -33,23 +33,24 @@
 .tableHeader,
 .tableRow {
   display: table-row;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .tableCell {
   display: table-cell;
   padding: 20px;
-  border: 1px solid #d9d9d9; 
+  /* border: 1px solid #d9d9d9;  */
   cursor: pointer;
 }
 
 .tableHeader .tableCell {
   font-weight: bold;
 }
-
+/* 
 .tableContainer .tableCell {
   border-left: 1px solid #d9d9d9; 
   border-right: 1px solid #d9d9d9;
-}
+} */
 
 
 .table-cell {
