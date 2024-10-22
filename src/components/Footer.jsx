@@ -5,7 +5,7 @@ import logoImg from '../assets/logo_d9d9d9.svg';
 
 const igUrl = "https://www.instagram.com/ewdm_theatre?igsh=MTQ2YmZwMWNub3BjaQ%3D%3D"
 const xUrl = "https://x.com/ewdmtheatre"
-const ticketUrl = ""
+const ticketUrl = "https://www.beatlive.kr/gig/85"
 
 const Footer = () => {
     return (
@@ -26,9 +26,9 @@ const Footer = () => {
                 </div>
                 <div className="sec">
                     <p className="secText">TICKET</p>
-                    <Link>
+                    <div onClick={()=>{window.open(ticketUrl)}}>
                         <div className="linkText">예매 링크 바로가기</div>
-                    </Link>
+                    </div>
                 </div>
             </div>
         </>
