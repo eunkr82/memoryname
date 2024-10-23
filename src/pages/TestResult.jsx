@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import styles from './TestResult.module.css';
 import Footer from '../components/Footer';
-import Seo from '../assets/seo.png';
-import Hwang from '../assets/hwang.png';
-import Choi from '../assets/choi.png';
-import Min from '../assets/min.png';
+import Seo from '../assets/seoIcon.svg';
+import Hwang from '../assets/hwangIcon.svg';
+import Choi from '../assets/choiIcon.svg';
+import Min from '../assets/minIcon.svg';
 
 const traitInfo = {
   서미경: {
@@ -50,7 +50,7 @@ const traitInfo = {
     bmInfo: "행동부터 앞서는 최이현과 사유에 그치는 황은재는 태생부터 반대라고 할 수 있습니다. 무엇이든 적극적으로 추진하는 최이현에게 황은재는 탁상공론이나 늘어놓는 책상물림처럼 보일 뿐입니다. 학창시절부터 수월하지 않았던 두 사람의 관계는 현재 어떤 모습을 하고 있을까요?",
     image: Choi,
     gmImage: Min,
-    bmImage: Choi,
+    bmImage: Hwang,
     myInfo: "인물 소개: 최이현. 한국대 88학번. 개명 전 이름 최현. 현 인권동행연대 대표, 그 전에는 여성운동의 선구자, 더 전에는 노동운동가, 그 시작점은 한국대학교 총여학생회였다. 지금으로부터 이십여 년 전인 1990년, 한국대학교 총여학생회에는 네 사람이 있었다. 회장 최현, 기획부장 윤영주, 재정부장 서미경, 선전부장 황은재. 신념과 자유를 소리높여 외칠 수 있고 뜻을 함께하는 친구들이 있는 최고의 시절이었다. 현과 절친한 사이였던 영주의 죽음 이후, 현은 운동에 회의를 느끼고 하나둘씩 떠나가는 친구들을 보았다. 그들의 외면과 변절을 그 자리에서 지켜볼 수밖에 없었다. 그렇지만 자신은 떠날 수 없었다. 영주가 바랐던 세상을 볼 수 있을 때까지는 멈출 수 없다. 그 세상이 불가능한 소망일지라도. 그 자리에 여전히 혼자 남아있었다. 그러던 어느 날, 영주의 이야기를 찍고 싶다는 한 감독이 인터뷰를 요청해 온다. 아직 영주의 이야기를 궁금해하는 사람들이 있구나, 기꺼운 마음으로 인터뷰에 응했다. 그러나 과거를 회상할수록 현은 자신이 모르던 무언가 있을지도 모른다는 느낌을 받는다. 아주 중요한 사실이."
   }
 };
@@ -70,7 +70,9 @@ const TestResult = () => {
       </div>
 
       <div className={styles.resultWrap}>
-        <img src={image} className={styles.resultImg} />
+        <div className={styles.iconWrap}>
+          <img src={image} className={styles.resultImg} />
+        </div>
         <div className={styles.resultText}>
           <div className={styles.box}>
             <h3>당신과 닮은 인물은 {result}입니다!</h3>
@@ -81,7 +83,9 @@ const TestResult = () => {
             <div className={styles.semiTitle}>
               <h3>당신과 잘 맞는 인물</h3> <h3>{goodMatch}</h3>
             </div>
-            <img src={gmImage} className={styles.Img} />
+            <div className={styles.iconWrapSmall}>
+              <img src={gmImage} className={styles.Img} />
+            </div>
             <p>{gmInfo}</p>
           </div>
 
@@ -89,7 +93,9 @@ const TestResult = () => {
             <div className={styles.semiTitle}>
               <h3>당신과 안 맞는 인물</h3> <h3>{badMatch}</h3>
             </div>
-            {bmImage && <img src={bmImage} className={styles.Img} />}
+            <div className={styles.iconWrapSmall}>
+              {bmImage && <img src={bmImage} className={styles.Img} />}
+            </div>
             <p>{bmInfo}</p>
           </div>
 
