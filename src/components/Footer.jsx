@@ -4,7 +4,7 @@ import logoImg from '../assets/logo_d9d9d9.svg';
 
 const igUrl = "https://www.instagram.com/ewdm_theatre?igsh=MTQ2YmZwMWNub3BjaQ%3D%3D"
 const xUrl = "https://x.com/ewdmtheatre"
-const ticketUrl = "https://www.beatlive.kr/gig/85"
+const ticketUrl = "https://www.beatlive.kr/gig/90"
 
 const Footer = () => {
     return (
